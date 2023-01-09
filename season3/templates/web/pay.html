@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pay.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+    <h1 style="margin-left:47%;">购物单车</h1>
+    <table border="3px" class="table-control" style="border-color:dimgrey;">
+        <tr>
+            <td>套餐名及价格</td>
+            
+        </tr>
+    
+        {% for display in order %}
+        <tr>
+            <td>{{ display.description }}</td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <br>
+    <br>
+    <div class="pay-qr">
+        <img class="qrimg-1" src="{% static 'images/qr.png'%}" alt="wx" style = "width : 300px; margin-left : 43%">
+
+    </div>
+    <div class='btn-pay'>
+        <a href="http://127.0.0.1:8000/"><input type="button" value="首页" class="btn btn-info btn-home"></a>
+        <a href="http://127.0.0.1:8000/web/pay_done/"><input type="button" value="完成支付" class="btn btn-success btn-p"></a>
+    </div>
+
+    
+    
+    
+    
+    
+    </body>
+</html>

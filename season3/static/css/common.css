@@ -1,0 +1,244 @@
+
+
+.side {
+    overflow:y;
+    width: 220px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    box-shadow: 0 0 4px rgb(0 0 0 / 12%);
+}
+.topside {
+    height: 600px;
+    width: 100%;
+}
+.nav {
+    margin-left: 30px;
+}
+ul, ol, li {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-bottom: 30px;
+    padding-top: 5px;
+    font-size: 20px;
+    padding-left: 40px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.toptitle {
+    color: #87BB3B;
+    cursor: pointer;
+    padding-bottom: 5px;
+    display: block;
+    color: #858585;
+}
+.logo {
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.logo {
+    display: block;
+    background: url(../images/logo.png) no-repeat;
+    width: 150px;
+    height: 40px;
+    margin: 53px 0 80px 25px;
+    font-size:20px
+}
+a {
+    color: #7f7f7f;
+    text-decoration: none;
+}
+.nav li.take-order:hover, .nav li.take-order.active {
+    background: url(../images/nav02_on.png) no-repeat 0 2px;
+    background-size: 28px auto;
+    background: url(../images/nav02_on_ie.png) no-repeat 0 2px\9;
+}
+.nav li.take-order {
+    background: url(../images/nav02.png) no-repeat 0 2px;
+    background-size: 28px auto;
+    background: url(../images/nav02_ie.png) no-repeat 0 2px\9;
+}
+.nav li.VIP {
+    background: url(../images/nav03.png) no-repeat 5px 0;
+    background-size: 20px auto;
+    background: url(../images/nav03_ie.png) no-repeat 5px 0\9;
+}
+.nav li.VIP:hover, .nav li.VIP.active {
+    background: url(../images/nav03_on.png) no-repeat 5px 0;
+    background-size: 20px auto;
+    background: url(../images/nav03_on_ie.png) no-repeat 5px 0\9;
+}
+.nav li.shoppingcart:hover, .nav li.shoppingcart.active {
+    background: url(../images/nav01_on.png) no-repeat 0 2px;
+    background-size: 28px auto;
+    background: url(../images/nav01_on_ie.png) no-repeat 0 2px\9;
+}
+.nav li.shoppingcart {
+    background: url(../images/nav01.png) no-repeat 0 2px;
+    background-size: 28px auto;
+    background: url(../images/nav01_ie.png) no-repeat 0 2px\9;
+}
+.box01-side {
+    margin-bottom: 10px;
+    
+    width: 100%;
+    
+}
+.tc {
+    text-align: center;
+    width: 100%;
+}
+.searchbox {
+    width: 194px;
+    height: 29px;
+    background: #f2f2f2;
+    border-radius: 15px;
+    margin: 0 auto 20px auto;
+}
+.pr {
+    position: relative;
+}
+.sharelink {
+    height: 42px;
+}
+.part01-side {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.part02-side {
+    color: #969696;
+    font-size: 12px;
+}
+.popewm {
+    width: 218px;
+    height: 259px;
+}
+.fx {
+    position: fixed;
+}
+.none {
+    display: none;
+}
+.popewm .close {
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    opacity: 1;
+}
+.pa {
+    position: absolute;
+}
+.searchbtn {
+    background: url(../images/searchbig.png) no-repeat;
+    background: url(../images/searchbig_ie.png) no-repeat\9;
+    width: 15px;
+    height: 15px;
+    background-size: 100% 100%;
+    left: 12px;
+    top: 7px;
+    cursor: pointer;
+}
+#keyword {
+    color: #563117;
+}
+.searchbox .text {
+    width: 135px;
+    height: 100%;
+    border: none;
+    background: none;
+    margin-left: 31px;
+    text-align: left;
+}
+input, button {
+    margin: 0;
+    font-size: 12px;
+    vertical-align: middle;
+}
+input[type="text" i] {
+    padding: 1px 2px;
+}
+.sharelink a, .sharelink .popwxside, .sharelink .jxlm {
+    display: inline-block;
+    margin: 0 4%;
+}
+.popwxside, .popwx {
+    width: 38px;
+    height: 38px;
+    background: url(../images/weixin.png) no-repeat;
+    background: url(../images/weixin_ie.png) no-repeat\9;
+    background-size: 38px 38px;
+    cursor: pointer;
+}
+.popwxside:hover,.popwx:hover{
+    background:url(../images/weixin_hover.png) no-repeat;
+    background:url(../images/weixin_hover_ie.png) no-repeat\9; 
+    background-size:38px 38px;
+}
+.jxlm {
+    width: 38px;
+    height: 38px;
+    background: url(../images/a.png) no-repeat;
+    background: url(../images/a_ie.png) no-repeat\9;
+    background-size: 38px 38px;
+    cursor: pointer;
+}
+.jxlm:hover{
+
+    background: url(../images/a_hover.png) no-repeat;
+    background: url(../images/a_hover_ie.png) no-repeat\9;
+    background-size: 38px 38px;
+
+}
+.weibo {
+    width: 38px;
+    height: 38px;
+    display: block;
+    background: url(../images/weibo.png) no-repeat;
+    background: url(../images/weibo_ie.png) no-repeat\9;
+    background-size: 38px 38px;
+}
+.weibo:hover{
+
+    background: url(../images/weibo_hover.png) no-repeat;
+    background: url(../images/weibo_hover_ie.png) no-repeat\9;
+    background-size: 38px 38px;
+}
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+.wrap {
+    position: relative;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+}
+.popewm {
+    width: 218px;
+    height: 259px;
+}
+.fx {
+    position: fixed;
+}
+.popewm .close {
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+    opacity: 1;
+}
+.tc {
+    text-align: center;
+    width: 100%;
+}
+
+.dish{
+    margin-left:220px;
+}

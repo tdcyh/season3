@@ -1,0 +1,28 @@
+body{
+    background-image: url("../images/vip_back.jpg");
+}
+.btn-pay{
+    position:relative;
+
+    margin-top:10%;
+}
+.btn-p{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    width:100px;
+    height:30px;
+}.btn-p1{
+    position:absolute;
+    right:220px;
+    bottom:10px;
+    width:100px;
+    height:30px;
+}
+.btn-home{
+    position:absolute;
+    right:130px;
+    bottom:10px;
+    width:70px;
+    height:30px;
+}

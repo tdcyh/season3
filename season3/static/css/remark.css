@@ -1,0 +1,61 @@
+.qabox {
+    padding: 3%;
+    font-size: 14px;
+    line-height: 28px;
+    width: 94%;
+    background: #fff;
+    box-shadow: 0 10px 10px rgb(220 220 220 / 60%);
+    float: left;
+    margin-bottom: 50px;
+}
+.grp01-qa .arr01, .grp01-qa .arr02 {
+    font-weight: bold;
+}
+.qabox .arr02 {
+    margin-left: 50px;
+}
+.grp01-qa {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+    color: #88b944;
+
+}
+.col01-contact {
+    padding-top: 90px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.qabox .arr02 {
+    margin-left: 50px;
+}
+.qabox .arr01 {
+    width: 50px;
+    font-weight: bold;
+}
+.fl {
+    float: left;
+    _display: inline;
+}
+.arr02{
+    text-align: left;
+}
+body {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    color: #563117;
+    font-family: "Gotham", Helvetica, Arial, PingFangSC-Regular, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    background: #fff;
+    line-height: 20px;
+    vertical-align: top;
+    width: 100%;
+    background-image: url("/static/images/probg.jpg");
+}
+
+.about .container-fluid{
+    width: 100%;
+    margin-left: 0px;
+}
+table {margin: auto;}

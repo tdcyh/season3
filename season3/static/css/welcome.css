@@ -1,0 +1,19 @@
+.container{
+    background-color: #FEE451;
+    /* background-image: url("/static/images/b1.jpg"); */
+    background-size: 1200px;
+    /* background-image: repeating-linear-gradient(to right bottom,#FEE34E,#FEDA00) */
+    
+}
+.lead{
+    font-size: 50px;
+    font-family:'STHupo' ,'DrawnBody', Arial, Helvetica, sans-serif;
+    color: white;
+}
+.info{
+    width: 50%;
+    display:inline;
+}
+.logo1{
+    position: absolute;
+}

@@ -1,0 +1,259 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Season3餐厅</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/remark.css' %}">
+
+    
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <style type="text/css">
+        
+        /* 设置导航条背景颜色以及边界颜色 */
+        .navbar-default{background-color:#0099ff;border-color:#e7e7e7;}
+        /* 导航栏中的品牌颜色 */
+        .navbar-default .navbar-brand{color:#fff;}
+        /* 子代选择器 和 多元素选择器 */
+        .navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:visited {
+            color: #fff;
+            width:100px;
+            font-size:14px;
+            text-align:center;
+        }
+        .navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:visited,.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav > .active > a:hover,.navbar-default .navbar-nav li a:active {
+            color:#fff;
+            background-color: #FF4500;
+            width:100px;
+            font-size:14px;
+            text-align:center;
+        }
+        
+        table tr td{font-size:11px;} 
+        table tr td.price{color:red;}
+        table tr td.num span{color:red;padding:0px 5px}
+        table tr td.num i{border-width:0px;background-color:#ddd;}  
+
+        div.shoplist div.bn{font-size:12px;line-height:25px;}
+        div.shoplist div.bn span.price{color:red;}
+    </style>
+</head>
+<body>
+    <!-- 页头导航开始 -->
+ 
+    <!-- 页头导航结束 -->
+    
+       
+  
+    <!-- /左侧 -->
+    <!-- 左侧 -->
+    <!-- <div class="side" >
+    
+      <div class="topside">
+  
+        <a class="logo" href="#">
+          <!-- 餐具图标 -->
+          <!-- 为了避免 屏幕识读设备抓取非故意的和可能产生混淆的输出内容（尤其是当图标纯粹作为装饰用途时），我们为这些图标设置了 aria-hidden="true" 属性。 -->
+          <!-- <span class="glyphicon glyphicon-cutlery" aria-hidden="true" style="color:sienna"></span> <span style="font-weight:bold;color:green;">Season3餐厅</span><span style="font-size:20px;"></span></a>
+  
+          
+          <ul class="nav">
+            <li class="take-order" >
+              <div class="toptitle"><a href="http://127.0.0.1:8000/web/dishes/" id="left_menu_order">新鲜舒食</a></div>
+              
+            </li>
+            <li class="shoppingcart" >
+              <div class="toptitle"><a href="http://127.0.0.1:8000/web/aboutus/" id="left_menu_shop">关于我们</a></div>
+              
+            </li>
+            <li class="VIP" >
+              <div class="toptitle"><a href="http://127.0.0.1:8000/web/vip/" id="left_menu_vip">尊享体验</a></div>
+              
+            </li>   
+            <li class="VIP" >
+              <div class="toptitle"><a href="http://127.0.0.1:8000/web/index_unlog/" id="left_menu_vip">客户评价</a></div>
+              
+            </li> 
+            <li class="VIP" >
+              <div class="toptitle"><a href="http://127.0.0.1:8000/web/index_unlog/" id="left_menu_vip">在线点餐</a></div>
+            </li>      
+          </ul>
+  
+          
+          </div> -->
+          <!-- <div class="box01-side tc">
+            <div class="searchbox pr"><div class="searchbtn pa searchbtnleft"></div><input type="text" placeholder="可输入关键词进行搜索" name="keyword" id="keyword" class="text" /></div>
+              <div class="sharelink pr">
+                  <div class="popwxside"></div><div class="jxlm"></div><a class="weibo" href="https://weibo.com/dicos" target="_black"></a>
+                  <div class="popewm none pa" id="popewm_side">
+                      <div class="close pa"><img src="/Public/static/images/close.png" /></div>
+                      <div class="ewmimg tc">
+                          <img src="/Public/static/images/pop_ewm.png" />
+                      </div>
+                  </div>
+                  <div class="popewm none pa" id="popewm_jxlm">
+                      <div class="close pa"><img src="/Public/static/images/close.png" /></div>
+                      <div class="ewmimg tc">
+                          <img src="/Public/static/images/jxlm.png" />
+                      </div>
+                  </div>
+              </div>
+              <div class="part01-side">
+                <a href="#">门店查询</a>
+              </div>
+              <div class="part02-side">
+                <p>消费者满意热线：4006395857</p>
+                  
+              </div>
+          </div>
+  
+    </div> --> 
+
+    <div class="about container-fluid" style="margin-left: 0px;">
+      <div class="row">
+        <img class="img-responsive model-img"  src="/static/images/niu1(1).png" alt="显示错误" width="100%">
+      </div>
+      <div class="prowrap">
+        <div class="col01-detail cf">
+          <div class="title tc">常 见 问 题</div>
+          <div class="qabox">
+            <div class="grp01-qa">
+              <div class="arr01 fl">Q1：</div>
+              <div class="arr02">如何查找附近Season3餐厅位置及联系方式呢？</div>
+            </div>
+            <div class="arr01 fl">A1：</div>
+            <p class="arr02">您好，您可以访问“Season3官网——门店查询”网页，搜索关键词或选择您所在的省市区进行查询，也可致电Season3消费者服务热线10086进行问询，将会有客服为您解答，谢谢。<br/></p>
+          </div>
+          <div class="qabox">
+            <div class="grp01-qa">
+              <div class="arr01 fl">Q2：</div>
+              <div class="arr02">我怎样才能成为Season3的会员？</div>
+            </div>
+            <div class="arr01 fl">A2：</div>
+            <p class="arr02">您好，您可以前往您所在区域的任一Season3餐厅，直接通过门店服务人员录入信息办理即可，具体详情以Season3餐厅服务解释为准，谢谢。<br/></p>
+          </div>
+
+          <div class="qabox">
+            <div class="grp01-qa">
+              <div class="arr01 fl">Q3：</div>
+              <div class="arr02">Season3可以提供外卖吗？我要如何订购Season3的餐点？</div>
+            </div>
+            <div class="arr01 fl">A3：</div>
+            <p class="arr02">您好，Season3在饿了么、美团平台均有门店上线，您可以通过该平台进行订餐并享受外送优惠，谢谢。<br/></p>
+          </div>
+
+          <div class="qabox">
+            <div class="grp01-qa">
+              <div class="arr01 fl">Q4：</div>
+              <div class="arr02">我在Season3所录入的个人信息，会被泄露吗？</div>
+            </div>
+            <div class="arr01 fl">A4：</div>
+            <p class="arr02">
+              您好，Season3门店及工作人员将严格遵守相关法律法规，对于您的个人资料和隐私权予以尊重和保密，绝不会透露任何信息给他人，谢谢。<br/></p>
+          </div>
+
+          <div class="qabox">
+            <div class="grp01-qa">
+              <div class="arr01 fl">Q5：</div>
+              <div class="arr02">我在Season3消费后，应该如何开发票？</div>
+            </div>
+            <div class="arr01 fl">A5：</div>
+            <p class="arr02">您好，您可以通过扫描购餐小票上的二维码，并填写开票信息进行开票申请。如开票过程中遇到问题，请致电Season3消费者服务热线10086或与餐厅门店服务员进行沟通解决，谢谢。<br/></p>
+          </div>
+
+
+
+        </div>                
+         
+      </div>
+    
+    
+    </div>
+    <div class="col01-detail cf">
+      <div class="title tc">其 他 问 题</div>
+      <p>如果您有其他宝贵意见或者建议，欢迎评论并留下您的联系方式，我们将会及时为您解决</p>
+
+    </div>
+
+
+    <form  method="post">
+        <p>名字<input type="text" name="username"></p>
+
+        <p>评论<input type="text" name="remark"></p>
+    
+        <p><input type="submit" value="submit"></p>
+    </form>
+    <hr>
+    <div class="col01-detail cf">
+      <div class="title tc">问 题 展 示</div>
+    </div>
+    <table border="1px">
+        <tr>
+            <td> ---用 户 id---</td>
+
+            <td> ---评    论--- </td>
+    
+        </tr>
+    
+        {% for i in user_list %}
+        <tr>
+            <td>{{ i.username }}</td>
+
+            <td>{{ i.remark }}</td>
+    
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form  method="post">
+    <p>名字<input type="text" name="username"></p>
+    <p>性别<input type="text" name="sex"></p>
+    <p>邮箱<input type="text" name="email"></p>
+    <p>评论<input type="text" name="remark"></p>
+
+    <p><input type="submit" value="submit"></p>
+</form>
+<hr>
+<h1>数据展示</h1>
+<table border="1px">
+    <tr>
+        <td>名字</td>
+        <td>性别</td>
+        <td>邮箱</td>
+        <td>评论</td>
+
+    </tr>
+
+    {% for i in user_list %}
+    <tr>
+        <td>{{ i.username }}</td>
+        <td>{{ i.sex }}</td>
+        <td>{{ i.email }}</td>
+        <td>{{ i.remark }}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html> -->

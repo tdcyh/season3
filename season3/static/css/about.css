@@ -1,0 +1,37 @@
+.about{
+    margin-left: 220px;
+    text-align: center;
+    background-image: url("/static/images/probg.jpg");
+}
+.col01-detail .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 44px;
+    margin-bottom: 28px;
+}
+.tc {
+    text-align: center;
+    width: 100%;
+}
+.newstab .itemtitle, .prowrap .itemtitle {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+img{
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.col01-detail {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+.part-aboutus{
+    text-align: left;
+    line-height: 2em;
+    
+}

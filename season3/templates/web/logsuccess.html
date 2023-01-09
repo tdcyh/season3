@@ -1,0 +1,62 @@
+{% load static %}
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>首页-Ericamblog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ericam_">
+
+    <!-- CSS -->
+	<link rel="shortcut icon" href="{% static 'images/gt_favicon.png' %}">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap-theme.css'%}" media="screen" >
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	<link rel="stylesheet" href="{% static 'css/log.css' %}">
+<style>
+	.lead{
+    color: white;
+    font-family: 'STHupo';
+    font-size: 75px;
+}
+
+.tagline{
+    color: white;
+}
+</style>
+</head>
+
+<body class="back" style="background-color: #FEE451; font-family:'STHupo' ,'DrawnBody', Arial, Helvetica, sans-serif; padding-top: 100px;">
+  <script src = "E:/bootstrap/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+  <!--导航栏-->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" style="background-color: #00B5AD ;color: #00B5AD; width: 100%;">
+		<div class="container" style="background-color: #00B5AD; width: 100%;">
+			<div class="container-fluid" style="background-color: #00B5AD; padding: 0px;">
+			  <div class="navbar-header">
+				<!-- Button for smallest screens -->
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			  </div>
+
+        <ul class="nav navbar-nav navbar-right" style="background-color: #00B5AD;">
+            <li><a><font size="4" color="white">{{user.nickname}}</font></a></li>
+            <li><a href="{%url 'web:index_unlog'%}"><i class="fa fa-sighout"></i><font size="4">注销</font></a></li>
+        </ul>
+    </div>
+	</div>
+</div>
+
+	  <center>
+    <div class="container" style="padding-top:50px;min-height:800px">
+      <div class="row">
+        <p class="lead"><font color="white"">登陆成功<br>(〃'▽'〃)</font></p>
+        <p><a class="btn btn-action btn-lg" role="button" href="{% url 'web:remark' %}" style="color: white; font-size: 50px;">问题反馈</a></p>
+        <p><a class="btn btn-action btn-lg" role="button" href="{% url 'web:cart' %}" style="color: white; font-size: 50px">堂食点餐</a></p>
+
+      </div>
+    </div>
+	</center>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+.former{
+   position: relative;
+    margin-top: 70px;
+}
+.clear{
+    position: absolute;
+    right:46%;
+    bottom: 10px;
+}

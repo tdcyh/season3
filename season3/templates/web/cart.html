@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物中心</title>
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+    
+    {% for display in awards %}
+    <div class="col-md-4 " style="display:inline-block">
+
+        <form  method="post">
+            <input type="image" src="{{display.photo.url}}"  width="300" height="300" name="photo">
+            <br>
+            <input type="textarea" value="{{display.description}}" readonly="readonly" style="border: none;" name="description">
+            <p><input type="submit" value="加入购物车" class="btn btn-success"></p>
+            
+        </form>
+
+
+    </div>
+    {% endfor %}
+ <h1>购物单车</h1>
+<table border="3px" class="table-control" style="border-color:dimgrey;">
+    <tr>
+        <td>套餐名及价格</td>
+        
+    </tr>
+
+    {% for display in cart %}
+    <tr>
+        <td>{{ display.description }}</td>
+        
+    </tr>
+    {% endfor %}
+</table>
+<form  method="get" class="former">
+
+    <p><input type="submit" value="清空购物车" class="btn btn-danger clear"></p>
+</form  >
+<div class='btn-pay'>
+    <a href="http://127.0.0.1:8000/"><input type="button" value="首页" class="btn btn-info btn-home"></a>
+    <a href="http://127.0.0.1:8000/web/pay/"><input type="button" value="支付账单" class="btn btn-success btn-p"></a>
+</div>
+
+
+
+
+
+</body>
+</html>

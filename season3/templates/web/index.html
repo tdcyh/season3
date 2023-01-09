@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Season3餐厅</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <style type="text/css">
+        
+        /* 设置导航条背景颜色以及边界颜色 */
+        .navbar-default{background-color:#0099ff;border-color:#e7e7e7;}
+        /* 导航栏中的品牌颜色 */
+        .navbar-default .navbar-brand{color:#fff;}
+        /* 子代选择器 和 多元素选择器 */
+        .navbar-default .navbar-nav > li > a,.navbar-default .navbar-nav > li > a:visited {
+            color: #fff;
+            width:100px;
+            font-size:14px;
+            text-align:center;
+        }
+        .navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:visited,.navbar-default .navbar-nav li a:hover,.navbar-default .navbar-nav > .active > a:hover,.navbar-default .navbar-nav li a:active {
+            color:#fff;
+            background-color: #FF4500;
+            width:100px;
+            font-size:14px;
+            text-align:center;
+        }
+        
+        table tr td{font-size:11px;} 
+        table tr td.price{color:red;}
+        table tr td.num span{color:red;padding:0px 5px}
+        table tr td.num i{border-width:0px;background-color:#ddd;}  
+
+        div.shoplist div.bn{font-size:12px;line-height:25px;}
+        div.shoplist div.bn span.price{color:red;}
+    </style>
+</head>
+<body>
+    <!-- 页头导航开始 -->
+ 
+    <!-- 页头导航结束 -->
+    
+       
+  
+    <!-- /左侧 -->
+    <!-- 左侧 -->
+    <div class="side">
+    
+      <div class="topside">
+  
+        <a class="logo" href="#">
+          <!-- 餐具图标 -->
+          <!-- 为了避免 屏幕识读设备抓取非故意的和可能产生混淆的输出内容（尤其是当图标纯粹作为装饰用途时），我们为这些图标设置了 aria-hidden="true" 属性。 -->
+          <span class="glyphicon glyphicon-eur" aria-hidden="true" style="color:sienna"></span> <span style="font-weight:bold;color:green;">Season3餐厅</span><span style="font-size:20px;"></span></a>
+  
+          
+      <ul class="nav">
+        <li class="take-order" >
+          <div class="toptitle"><a href="http://127.0.0.1:8000/web/dishes/" id="left_menu_order">新鲜舒食</a></div>
+          
+        </li>
+        <li class="shoppingcart" >
+          <div class="toptitle"><a href="http://127.0.0.1:8000/web/aboutus/" id="left_menu_shop">关于我们</a></div>
+          
+        </li>
+   
+        <li class="VIP" >
+          <div class="toptitle"><a href="http://127.0.0.1:8000/web/index_unlog/" id="left_menu_vip">客户评价</a></div>
+        </li>  
+        <li class="VIP" >
+          <div class="toptitle"><a href="http://127.0.0.1:8000/web/index_unlog/" id="left_menu_vip">在线点餐</a></div>
+        </li>    
+      </ul>
+  
+          
+          </div>
+          <div class="box01-side tc">
+            <div class="searchbox pr"><div class="searchbtn pa searchbtnleft"></div><input type="text" placeholder="可输入关键词进行搜索" name="keyword" id="keyword" class="text" /></div>
+              <div class="sharelink pr">
+                  <div class="popwxside"></div><div class="jxlm"></div><a class="weibo" href="https://weibo.com/dicos" target="_black"></a>
+                  <div class="popewm none pa" id="popewm_side">
+                      <div class="close pa"><img src="/Public/static/images/close.png" /></div>
+                      <div class="ewmimg tc">
+                          <img src="/Public/static/images/pop_ewm.png" />
+                      </div>
+                  </div>
+                  <div class="popewm none pa" id="popewm_jxlm">
+                      <div class="close pa"><img src="/Public/static/images/close.png" /></div>
+                      <div class="ewmimg tc">
+                          <img src="/Public/static/images/jxlm.png" />
+                      </div>
+                  </div>
+              </div>
+              <div class="part01-side">
+                <a href="http://127.0.0.1:8000/web/aboutus/">门店查询</a>
+              </div>
+              <div class="part02-side">
+                <p>消费者满意热线：4006395857</p>
+                  
+              </div>
+          </div>
+  
+      </div>
+      <div class="row dish">
+        {% for display in displays1 %}
+        <div class="col-sm-6 col-md-6">
+          <img src="{{display.photo.url}}" style="width:100%; height : 420px">
+
+
+      </div>
+      {% endfor %}
+      </div>
+      <div class="row dish">
+        {% for display in displays2 %}
+        <div class="col-sm-6 col-md-4">
+            <img src="{{display.photo.url}}"style="width:100%; height : 450px">
+            
+  
+        </div>
+      {% endfor %}
+      </div>
+
+
+</body>
+</html>
